@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="loading">Loading...</string>
+    <string name="mode_of_transport">Mode of transport</string>
+    <string name="next">Next</string>
+    <string name="cars" formatted="false">Car - %s</string>
+    <string name="trains" formatted="false">Train - %s</string>
+</resources>

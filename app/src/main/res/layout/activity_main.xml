@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_16dp"
+    tools:context="com.assignmenttwo.activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner_countries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_countries"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_of_transport"
+                style="@style/value_style" />
+
+            <TextView
+                android:id="@+id/tv_car_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_style" />
+
+            <TextView
+                android:id="@+id/tv_train_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_style" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_info"
+            android:layout_centerHorizontal="true"
+            android:text="@string/next" />
+    </RelativeLayout>
+</ScrollView>
